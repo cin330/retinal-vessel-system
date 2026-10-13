@@ -2,6 +2,12 @@
 
 基于 PySide6 的眼底图像处理与算法比较桌面程序，支持灰度预览、窗宽窗位、绿色通道、高斯与自适应中值滤波、双图同步操作、ROI、Otsu 和分水岭分割，以及 Sobel、Prewitt、Roberts、Canny、Laplacian、Scharr 比较与结果导出。
 
+## 视频演示
+
+https://github.com/user-attachments/assets/efb1fa95-23fe-4446-aa28-7581bd705780
+
+时长 59 秒，1920×1080。完整 MP4 保存在 `demo/demo.mp4`。
+
 ## 安装与启动
 
 推荐 Python 3.11。进入仓库根目录后执行：
