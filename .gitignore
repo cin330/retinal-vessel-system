@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.vscode/
+.agents/
+.codex/
+.aws/
+.env
+.env.*
+!.env.example
+*.log
+outputs/
+result/
+*.zip

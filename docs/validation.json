@@ -1,0 +1,294 @@
+{
+  "validated_at": "2026-10-12T21:07:54.696304+09:00",
+  "environment": "yolo",
+  "versions": {
+    "python": "3.11.15",
+    "PySide6": "6.11.2",
+    "opencv": "5.0.0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-image": "0.26.0"
+  },
+  "sample": "data/retina.jpg",
+  "image_shape": [
+    1411,
+    1411,
+    3
+  ],
+  "enhancement": {
+    "gaussian": {
+      "elapsed_ms": 5.28,
+      "shape": [
+        1411,
+        1411,
+        3
+      ]
+    },
+    "adaptive_median": {
+      "elapsed_ms": 1126.63,
+      "shape": [
+        1411,
+        1411,
+        3
+      ]
+    }
+  },
+  "interaction": {
+    "drag_duration_ms": 1104.03,
+    "preview_frames_before_release": 32,
+    "first_preview_latency_ms": 40.64,
+    "median_preview_interval_ms": 31.8,
+    "final_gray_mix": 98,
+    "final_matches_full_resolution_reference": true
+  },
+  "algorithms": {
+    "otsu": {
+      "algorithm": "otsu",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "otsu"
+      },
+      "elapsed_ms": 0.835,
+      "binary": true,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "threshold": 42.0,
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 1514953
+    },
+    "watershed": {
+      "algorithm": "watershed",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "watershed"
+      },
+      "elapsed_ms": 980.052,
+      "binary": true,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "marker_count": 359,
+        "region_count": 359,
+        "contrast_threshold": 18.876,
+        "candidate_components": 118,
+        "preprocessing_cache_hit": false
+      },
+      "nonzero_pixels": 57189
+    },
+    "sobel": {
+      "algorithm": "sobel",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "sobel"
+      },
+      "elapsed_ms": 6.478,
+      "binary": false,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 1525849
+    },
+    "prewitt": {
+      "algorithm": "prewitt",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "prewitt"
+      },
+      "elapsed_ms": 80.297,
+      "binary": false,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 1525869
+    },
+    "roberts": {
+      "algorithm": "roberts",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "roberts"
+      },
+      "elapsed_ms": 31.558,
+      "binary": false,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 1293789
+    },
+    "canny": {
+      "algorithm": "canny",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "canny"
+      },
+      "elapsed_ms": 1.337,
+      "binary": true,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 5313
+    },
+    "laplacian": {
+      "algorithm": "laplacian",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "laplacian"
+      },
+      "elapsed_ms": 10.413,
+      "binary": false,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 1292420
+    },
+    "scharr": {
+      "algorithm": "scharr",
+      "parameters": {
+        "gray_mix": 98,
+        "window_width": 255,
+        "window_level": 128,
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "gaussian_kernel": 5,
+        "gaussian_sigma": 0.0,
+        "adaptive_median_max_kernel": 7,
+        "otsu_invert": false,
+        "watershed_sigma": 1.5,
+        "watershed_foreground": 35,
+        "watershed_min_distance": 12,
+        "edge_kernel": 3,
+        "edge_threshold": 0,
+        "canny_low": 50,
+        "canny_high": 150,
+        "algorithm": "scharr"
+      },
+      "elapsed_ms": 18.231,
+      "binary": false,
+      "metadata": {
+        "input_channel": "green",
+        "denoise": "gaussian",
+        "preprocessing_cache_hit": true
+      },
+      "nonzero_pixels": 1525871
+    }
+  },
+  "original_unchanged": true,
+  "export_directory": "outputs/2026-10-12_21-07-54_3f7f7d",
+  "screenshot": "docs/ui-preview.png"
+}

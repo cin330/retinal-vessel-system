@@ -1,0 +1,22 @@
+[project]
+license = {text = "AGPL-3.0-only"}
+name = "retinal-vessel-system"
+version = "1.0.0"
+description = "视网膜血管图像分割教学与算法对比桌面系统"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["retinal_vessel_system*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+

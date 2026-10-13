@@ -1,0 +1,194 @@
+{
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "project": "视网膜血管图像分割系统设计",
+  "frozen_at": "2026-10-13T16:55:06.565012+09:00",
+  "validation": {
+    "existing_tests_passed": 39,
+    "python": "3.11.15",
+    "environment": "yolo",
+    "qt_platform": "offscreen",
+    "real_microphone_or_model_inference_revalidated": false
+  },
+  "files": {
+    ".gitignore": {
+      "bytes": 132,
+      "sha256": "4d455c01cd84f05b242fa1fdaa8e496ce0e04c24d37113ed86223f0780c57981"
+    },
+    "COPYRIGHT.md": {
+      "bytes": 672,
+      "sha256": "a40afad66dee569334b9e737d726798e4711a603de8fde9b7a904fd0c9527f44"
+    },
+    "LICENSE": {
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    "PROJECT_INTRODUCTION.md": {
+      "bytes": 7448,
+      "sha256": "71278ea2597b30d5b0c7a21f9078e2173357b1a17177cd31a6ba066820fe64a5"
+    },
+    "README.md": {
+      "bytes": 1560,
+      "sha256": "e4559f4b1005e33fcf6c5c306627109a4daeb58a2fadb024fb428b12fe7709df"
+    },
+    "THIRD_PARTY.md": {
+      "bytes": 383,
+      "sha256": "2b5c6ee300bc8663bc0601ed6dc67604135db678fa389ae5f13ababa6b413e14"
+    },
+    "data/images.jpeg": {
+      "bytes": 13075,
+      "sha256": "d0a9b9e4c1aff09596f1cef3f8197b17ed885a36a20d7682e8a030e3871f5d48"
+    },
+    "data/retina.jpg": {
+      "bytes": 295298,
+      "sha256": "7d28f981f16327c446dc1a4713ea1ce8777e36c742286abe53989196f9a791e1"
+    },
+    "docs/ui-minimum.png": {
+      "bytes": 294210,
+      "sha256": "298ef1c0d938b9d861e71cee15666be9b6e8ec959ebf2e2e94978cd41d7792b1"
+    },
+    "docs/ui-preview.png": {
+      "bytes": 404823,
+      "sha256": "016e34bd4e3321c827c4b6dbe7a0a84e2d1f393ca10c1132f3e7020628ff50e2"
+    },
+    "docs/validation.json": {
+      "bytes": 7736,
+      "sha256": "2a3b174a5471553df00477941e7d02dc27649e452945e2831511e03dea1435aa"
+    },
+    "main.py": {
+      "bytes": 238,
+      "sha256": "04e6b70bc2dfa312ba1ac1a84ceeb9dc09f7d0d3c08c8026df8791c1c2d59c30"
+    },
+    "pyproject.toml": {
+      "bytes": 522,
+      "sha256": "b49c73be8d72d0e8fe94b331ad51a7964de35bb323e4281fe39b48e2a2b929ff"
+    },
+    "requirements-dev.txt": {
+      "bytes": 34,
+      "sha256": "1438527233ce7beb1cdf4a046b8b5d38f140bd77217ef4df17d5592989d3ec15"
+    },
+    "requirements.txt": {
+      "bytes": 91,
+      "sha256": "8b6a685e56695d41c0bd6b42b551e8b09c2a08f0b150f924f76a1563b51927d6"
+    },
+    "retinal_vessel_system/__init__.py": {
+      "bytes": 170,
+      "sha256": "7f9d7b01ef7f10d0d7aefdce40aa3b2959119c018d08646ea3afb697f73ebb32"
+    },
+    "retinal_vessel_system/config.py": {
+      "bytes": 3491,
+      "sha256": "1f45d0b9bf8f5e53583c6d115362d45e93ba0e24c60502221ba21519517b0e29"
+    },
+    "retinal_vessel_system/core/__init__.py": {
+      "bytes": 80,
+      "sha256": "1612e7b9062ab3b6ab61bb7574b58d95ecb9fead1b38d76ad75902aaa0e85657"
+    },
+    "retinal_vessel_system/core/controller.py": {
+      "bytes": 12079,
+      "sha256": "57fec9a86cd7cc7d40e06d10ff8364c0875919b3522a448cbb0389232948eda6"
+    },
+    "retinal_vessel_system/core/state.py": {
+      "bytes": 5025,
+      "sha256": "2af7551bc03fce6eceeb24acbf159403235189f261f503c21111fb20f251778f"
+    },
+    "retinal_vessel_system/core/worker.py": {
+      "bytes": 1039,
+      "sha256": "26bf1222d2482363101115cc575280c115ede19fe05579caf3d390ab0b0fdb65"
+    },
+    "retinal_vessel_system/gui/__init__.py": {
+      "bytes": 80,
+      "sha256": "1612e7b9062ab3b6ab61bb7574b58d95ecb9fead1b38d76ad75902aaa0e85657"
+    },
+    "retinal_vessel_system/gui/comparison_panel.py": {
+      "bytes": 4394,
+      "sha256": "f002cb57fca2eb2acd1fdb10cdd84b0842696e0acaa9dd8f80fd1a5bb056fc25"
+    },
+    "retinal_vessel_system/gui/image_view.py": {
+      "bytes": 5709,
+      "sha256": "497fbeb7eab8bbc91318c86991de5b8f80c9d83736454c11c1270d066743ab09"
+    },
+    "retinal_vessel_system/gui/main_window.py": {
+      "bytes": 20032,
+      "sha256": "3c2d72ae95a422b4761d3bcd25c63e059d6823e7eee647e543526b21cb7fd0be"
+    },
+    "retinal_vessel_system/gui/parameter_panel.py": {
+      "bytes": 13372,
+      "sha256": "d05c00e77800f16e391c00bbca4172e1a54421d669c92d1b532e0b7781170693"
+    },
+    "retinal_vessel_system/gui/synced_view.py": {
+      "bytes": 3931,
+      "sha256": "c9114d07c213711a56b0fa301ab2bfde1698b8da2f625e8b51b66bebff30766b"
+    },
+    "retinal_vessel_system/main.py": {
+      "bytes": 1414,
+      "sha256": "8c790853c76cc1c04587657439d6fa99d12eb91df931ff04c51abea6d166a9ef"
+    },
+    "retinal_vessel_system/processing/__init__.py": {
+      "bytes": 80,
+      "sha256": "1612e7b9062ab3b6ab61bb7574b58d95ecb9fead1b38d76ad75902aaa0e85657"
+    },
+    "retinal_vessel_system/processing/basic.py": {
+      "bytes": 1364,
+      "sha256": "7d602b06f59bd85f1f489ab55b7d6577a148ff01ac1a7d25b5be14335664558e"
+    },
+    "retinal_vessel_system/processing/edges.py": {
+      "bytes": 1575,
+      "sha256": "da84b4788a2fd6396fa97c2141a5fd6094ef95bdb2beab77e0334174ed49d641"
+    },
+    "retinal_vessel_system/processing/enhancement.py": {
+      "bytes": 1532,
+      "sha256": "e1a8bd7cd3a7a6799acdf9779ddc9dda2c99c1f362bef62bc99555a68162afce"
+    },
+    "retinal_vessel_system/processing/pipeline.py": {
+      "bytes": 6808,
+      "sha256": "7913dfe405e3a5c24a73331d8f823b4c9f3fe17b858d9113a3a20f1d5aadb052"
+    },
+    "retinal_vessel_system/processing/segmentation.py": {
+      "bytes": 3021,
+      "sha256": "8e247d5800f6810df9c0787df35188731e8d7bce1bfbaa3050a50ef34ab05e5f"
+    },
+    "retinal_vessel_system/utils/__init__.py": {
+      "bytes": 80,
+      "sha256": "1612e7b9062ab3b6ab61bb7574b58d95ecb9fead1b38d76ad75902aaa0e85657"
+    },
+    "retinal_vessel_system/utils/comparison.py": {
+      "bytes": 2884,
+      "sha256": "d141295cbea817dd7a2afe84b96bbd755aed3f4bd220498a555edd2ff71aaed0"
+    },
+    "retinal_vessel_system/utils/export.py": {
+      "bytes": 2935,
+      "sha256": "cede3de9fce94dbeed98e0d6d41257664c28780b49ebbe3cba22f2806f7a8741"
+    },
+    "retinal_vessel_system/utils/image_io.py": {
+      "bytes": 956,
+      "sha256": "f35377ecd25d5ab37daee5e1accb4543e7d69c8715e8b01b7f9fa107e887615a"
+    },
+    "retinal_vessel_system/utils/qt_image.py": {
+      "bytes": 599,
+      "sha256": "5b345805aca3fccbf0d9e4f1b8486c8f52c8f0fb84cae3c3b223ecba338f7de2"
+    },
+    "scripts/verify_demo.py": {
+      "bytes": 6537,
+      "sha256": "178375c450bab74f2426ec4b6bae82b125fb3adf3f69a5735593f1ed66910878"
+    },
+    "tests/conftest.py": {
+      "bytes": 1143,
+      "sha256": "8c1acab73a640b588be76cce8125f99bb07393953f77e432c4414f85afd35d40"
+    },
+    "tests/test_gui.py": {
+      "bytes": 14914,
+      "sha256": "95f031b0b4523c39a055f44097740358faf8c370f03c89718ef9efdaeace4adc"
+    },
+    "tests/test_io_export.py": {
+      "bytes": 2386,
+      "sha256": "ced22848be2b4e328c90f13473e16c625477fec0c07a10c7c6b1cd2e401bf1bb"
+    },
+    "tests/test_processing.py": {
+      "bytes": 5791,
+      "sha256": "d74c97cac42e25351951018c068889878bf6f5103d8a232f9b42169392d2cb84"
+    }
+  },
+  "author": "cin330",
+  "license": "AGPL-3.0-only",
+  "application_python_files_verified_identical_except_copyright_headers": 30
+}
